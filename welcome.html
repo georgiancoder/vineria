@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>welcome</title>
+    <style>* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  *::before, *::after {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
+input[type=reset], input[type=submit], input[type=button], button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+a {
+  color: inherit;
+  font-family: inherit; }
+
+body {
+  background-color: #171c34;
+  background-image: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body .intro {
+    width: 804px;
+    height: 435px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    body .intro a.logo img {
+      width: 100%; }
+    body .intro ul.lang {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body .intro ul.lang li {
+        color: #69749c;
+        text-transform: uppercase;
+        font-size: 19px;
+        margin: 0 9px; }
+        body .intro ul.lang li.active, body .intro ul.lang li:hover {
+          color: #f9d464;
+          position: relative; }
+          body .intro ul.lang li.active::after, body .intro ul.lang li:hover::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #f9d464;
+            position: absolute;
+            bottom: -5px;
+            left: 0; }
+
+    </style>
+  </head>
+  <body>
+    <div class="intro"><a class="logo" href="index.html"><img src="images/logobig.png"></a>
+      <ul class="lang">
+        <li class="active"><a href="#">ქა</a></li>
+        <li><a href="#">EN</a></li>
+        <li><a href="#">ру</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

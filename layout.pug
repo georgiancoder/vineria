@@ -1,0 +1,36 @@
+doctype
+html
+  head
+    title Vineria
+    link(rel="stylesheet" href="css/fonts.css")
+    link(rel="stylesheet" href="css/ka.css")
+    link(rel="stylesheet" href="css/materialize.min.css")
+    link(rel="stylesheet" href="css/main.css")
+  body
+    .header
+      .wrapper
+        .top
+          .langs ვა:
+            ul
+              li.active
+                a(href="") ქა
+              li
+                a(href="") EN
+              li
+                a(href="") ру
+          a.logo(href="index.html")
+            img(src="images/logo.png")
+          .basket
+            a(href="") კალათა <img src="images/carticon.png"> <span>0</span>
+        ul.menubar
+          -var menu = [{title: 'ღვინის მაღაზია', href: ''},{title: 'საკონფერენციო დარბაზი', href: ''},{title: 'შეთავაზებები', href: ''},{title: 'ღონისძიებები', href: ''},{title: 'გალერეა', href: ''},{title: 'კონტაქტი', href: ''}];
+            each menuitem, index in menu
+              li(class=(index == 3) ? 'active' : '')
+                a(href=menuitem.href)=menuitem.title
+    block content
+    
+    .footer 
+      .wrapper ვინერია &copy; 2017
+    script(src="js/jquery-3.2.1.min.js")
+    script(src="js/materialize.min.js")
+    script(src="js/main.js")
