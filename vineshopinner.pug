@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+  .shopinner
+    .wrapper
+      .img
+        img(src="images/bottlebig.png")
+      .text
+        a.back(href="vineshop.html") <img src="images/back.png"> უკან დაბრუნება
+        .info
+          div
+            h2 მწვანე ქისი
+            .price 45.00 <span class="gel">A</sapn>
+            .manufacturer თელავის ღვინის მარანი
+            .year 2017
+            form(action="" method="post")
+              input(type="button" value="-" onclick="decreese('.count')")
+              input(type="text" value="15" class="count")
+              input(type="button" value="+" onclick="encreese('.count')")
+              button(type="submit") <img src="images/cart2.png"> დამატება
+          div
+            table
+              -var inf = [{title: "ფერი", text: "ღია ოქროსფერი"},{title: "არომატი", text: "ყვავილები, ხილის ბუკეტი"},{title: "გემო", text: "ჰარმონიული"},{title: "კიში", text: "რქაწითელი"},{title: "მოსავალი", text: "ნაფარეული"},{title: "ალკოჰოლი", text: "12%"}];
+                each i in inf
+                  tr
+                    th=i.title + ":"
+                    td=i.text
+
+        .about
+          h3 ღვინის შესახებ
+          p ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე. შედეგად, ტექსტი ჩვეულებრივ ინგლისურს გავს, მისი წაითხვა კი შეუძლებელია

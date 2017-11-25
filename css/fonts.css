@@ -1,4 +1,14 @@
 @font-face {
+    font-family: 'BPG GEL';
+    src: url('../fonts/BPGGEL.eot');
+    src: url('../fonts/BPGGEL.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BPGGEL.woff') format('woff'),
+        url('../fonts/BPGGEL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
 	font-family: 'BPG Arial';
 	src: url('../fonts/BPGArial.eot');
 	src: url('../fonts/BPGArial.eot?#iefix') format('embedded-opentype'),

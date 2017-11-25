@@ -1,0 +1,29 @@
+extends layout.pug
+
+block content
+  .vineshop
+    .wrapper
+      img.ico(src="images/vineico.png")
+      ul.filters
+        -var filter1 = ['ყველა','თეთრი','წითელი','როზე','ქვევრი']
+          each filter, index in filter1
+            li(class=(index==2) ? "active" : "")
+              a(href="")=filter
+      ul.filters2
+        -var filter2 = ['მშრალი','ნახევრად მშრალი','ნახევრად ტკბილი','ტკბილი','ცქრიალა']
+          each filter, index in filter2
+            li(class=(index==1) ? "active" : "")
+              a(href="")=filter
+      .content
+        -for (var i = 0; i < 9; i++)
+          .vine
+            .img
+              img(src="images/bottle.png")
+            .desc
+              h2 მწვანე ქისი
+              .price 45.00 <span class='gel'>A</span>
+              .manufacturer თელავის ღვინის მარანი
+              .year 2017
+              .basket
+                a.addToCart(href="vineshopinner.html") <img src="images/basket.png"> დამატება
+ 
