@@ -60,6 +60,7 @@ body {
     body .intro a.logo img {
       width: 100%; }
     body .intro ul.lang {
+      font-family: "Roboto _GEO Mt";
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;

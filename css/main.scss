@@ -255,6 +255,7 @@ body{
             align-items: flex-end;
           }
           .details{
+            width: 100%;
             padding-left: 65px;
             input[type=text]{
               box-sizing: border-box;
@@ -662,6 +663,7 @@ body{
             }
           }
           p{
+            width: 100%;
             br{
               content: "A";
               display: block;

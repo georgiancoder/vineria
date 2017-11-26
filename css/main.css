@@ -270,6 +270,7 @@ body {
           -ms-flex-align: end;
           align-items: flex-end; }
         body .modal .modal-content form > div .details {
+          width: 100%;
           padding-left: 65px; }
           body .modal .modal-content form > div .details input[type=text] {
             -webkit-box-sizing: border-box;
@@ -650,10 +651,12 @@ body {
           margin: auto;
           margin-top: 30px;
           margin-bottom: 30px; }
-        body .scrollContent .koncefcia .wrapper .desc p br {
-          content: "A";
-          display: block;
-          margin-bottom: 25px; }
+        body .scrollContent .koncefcia .wrapper .desc p {
+          width: 100%; }
+          body .scrollContent .koncefcia .wrapper .desc p br {
+            content: "A";
+            display: block;
+            margin-bottom: 25px; }
       body .scrollContent .koncefcia .wrapper .img {
         width: 418px;
         height: 400px;

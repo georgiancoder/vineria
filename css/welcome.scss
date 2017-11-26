@@ -13,6 +13,7 @@
   &::before, &::after{
     transition: 0.3s;
   }
+
 }
 
 input[type=reset], input[type=submit], input[type=button], button{
@@ -51,6 +52,7 @@ body{
       }
     }
     ul.lang{
+      font-family: "Roboto _GEO Mt";
       display: flex;
       justify-content: center;
       li{
