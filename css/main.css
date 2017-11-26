@@ -39,6 +39,7 @@ body {
   background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   overflow: auto !important; }
   body > .header .top {
     height: 215px;
