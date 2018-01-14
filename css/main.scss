@@ -1,3 +1,10 @@
+@mixin marginCounter($wrapperWidth, $itemWidth, $count) {
+  margin-right: ($wrapperWidth / $count) - $itemWidth;
+  &:nth-child(#{$count}n + #{$count}){
+    margin-right: 0;
+  }
+}
+
 *{
   margin: 0;
 	padding: 0;
@@ -190,9 +197,32 @@ body{
             margin-bottom: 60px;
             .img{
               width: 80px;
+              position: relative;
               text-align: center;
+              &:hover{
+                &::after{
+                  opacity: 0.7;
+                }
+              }
+              &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                z-index: 0;
+                width: 150px;
+                height: 170px;
+                background-color: #357dbf;
+                border-radius: 50%;
+                background: radial-gradient(at center, transparentize(#357dbf, 0), transparentize(#357dbf, 0.5), transparentize(#357dbf, 1), transparentize(#357dbf, 1), transparentize(#357dbf, 1));
+                opacity: 0;
+              }
               img{
                 width: 35px;
+                position: relative;
+                z-index: 2;
               }
             }
             .manufacturer{
@@ -861,6 +891,222 @@ body{
             background-color: #495274;
             margin-bottom: 20px;
           }
+        }
+      }
+    }
+  }
+
+  .contact{
+    .wrapper{
+      padding: 105px 40px;
+      padding-bottom: 0;
+      form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .l{
+          width: 430px;
+          input{
+            height: 50px;
+            width: 100%;
+            border: 1px solid #4c5c96;
+            font-size: 14px;
+            color: #FFF;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin: 0;
+            margin-bottom: 40px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            &:focus{
+              box-shadow: initial;
+              border: 1px solid #4c5c96;
+            }
+          }
+        }
+        textarea{
+          width: 540px;
+          height: 230px;
+          resize: none;
+          border: 1px solid #4c5c96;
+          font-size: 14px;
+          color: #FFF;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+        .b{
+          width: 100%;
+          text-align: right;
+          margin-top: 30px;
+          input[type='reset']{
+            height: 50px;
+            padding: 0 50px;
+            background-color: rgba(255,255,255,0.1);
+            font-size: 18px;
+            color: #FFF;
+            &:hover,&:focus{
+              background-color: rgba(255,255,255,0.5);
+            }
+          }
+          input[type='submit']{
+            height: 50px;
+            padding: 0 50px;
+            color: #46380c;
+            font-size: 18px;
+            background-color: #fdd866;
+            margin-left: 15px;
+            &:hover,&:focus{
+              background-color: darken(#fdd866,10%);
+            }
+          }
+        }
+
+      }
+      .info{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 17px;
+        color: #FFF;
+        li{
+          img{
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    #map{
+      width: 100%;
+      height: 410px;
+      margin-top: 80px;
+      &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparentize(#323f71,0.5);
+      }
+    }
+  }
+
+  .gallery{
+    .wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 100px 40px;
+      .g{
+        width: 275px;
+        @include marginCounter(1113px,275px,3);
+        margin-bottom: 30px;
+        &:hover{
+          .cover{
+            img{
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+        .cover{
+          width: 265px;
+          height: 210px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          border-right: 1px solid #FFF;
+          border-bottom: 1px solid #FFF;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            top: -10px;
+            left: -10px;
+          }
+        }
+        a{
+          margin-top: 20px;
+          display: block;
+          font-size: 20px;
+          color: #FFF;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .galleryinner{
+    .wrapper{
+      padding: 40px;
+      a.back{
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        color: #69749c;
+        img{
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+      .images{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        a{
+          width: 210px;
+          height: 175px;
+          display: block;
+          @include marginCounter(1113px - 80px,210px,4);
+          margin-bottom: 30px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .textpageinner{
+    .wrapper{
+      padding: 40px;
+      a.back{
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        color: #69749c;
+        img{
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+      .text{
+        margin-top: 30px;
+        h2{
+          font-size: 27px;
+          color: #FFF;
+          margin-bottom: 30px;
+        }
+        img{
+          float: left;
+          margin-right: 40px;
+          margin-bottom: 40px;
+          width: 420px;
+          height: 400px;
+          object-fit: cover;
+        }
+        p{
+          font-size: 15px;
+          color: #FFF;
+          margin-bottom: 20px;
         }
       }
     }

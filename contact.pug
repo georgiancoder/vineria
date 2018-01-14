@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+  .contact
+    .wrapper
+      form(action='' method='post')
+        .l
+          input(type='text' name='name' placeholder='თქვენი სახელი, გვარი')
+          input(type='text' name='tell' placeholder='საკონტაქტო ტელეფონი/ელ. ფოსტა')
+          input(type='text' name='subject' placeholder='თემა')
+        textarea(placeholder='გზავნილი')
+        .b
+          input(type='reset' value='წაშლა')
+          input(type='submit' value='გაგზავნა')
+      ul.info
+        li.pin <img src="images/pin.png"> თამარაშვილის ქ. #45
+        li.mobile <img src="images/phone.png"> +995 558 77 77 77
+        li.phone <img src="images/tell.png"> 0322 2 22 44 11
+        li.email <img src="images/email.png"> <a href="mailto: info@vineria.ge">info@vineria.ge</a>
+    #map

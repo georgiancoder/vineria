@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+  .galleryinner
+    .wrapper
+      a.back(href="gallery.html") <img src="images/back.png"> უკან დაბრუნება
+      .images
+        -for(i=0; i<12; i++)
+          a(href="images/events.png" data-lightbox="asd")
+            img(src="images/events.png")

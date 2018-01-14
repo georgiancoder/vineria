@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto _GEO Mt';
 }
 
-body > .header .top, body > .header ul.menubar, body > .footer, body .scrollContent .address .wrapper .info, body .events .wrapper .event .desc .date, body .textpage .wrapper .text .more, body .vineshop .wrapper .filters, body .vineshop .wrapper .filters2, body .vineshop .wrapper .content .vine .desc, body .shopinner .wrapper .text a.back, body .shopinner .wrapper .text .info, .modal {
+body > .header .top, body > .header ul.menubar, body > .footer, body .scrollContent .address .wrapper .info, body .events .wrapper .event .desc .date, body .textpage .wrapper .text .more, body .vineshop .wrapper .filters, body .vineshop .wrapper .filters2, body .vineshop .wrapper .content .vine .desc, body .shopinner .wrapper .text a.back, body .shopinner .wrapper .text .info, .modal, .contact, .gallery, .galleryinner, a.back {
   font-family: 'Roboto _GEO Mt';
 }
 

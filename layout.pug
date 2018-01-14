@@ -5,6 +5,7 @@ html
     meta(charset="utf-8")
     link(rel="stylesheet" href="css/fonts.css")
     link(rel="stylesheet" href="css/ka.css")
+    link(rel="stylesheet" href="css/lightbox.min.css")
     link(rel="stylesheet" href="css/materialize.min.css")
     link(rel="stylesheet" href="css/animate.css")
     link(rel="stylesheet" href="css/main.css")
@@ -60,7 +61,7 @@ html
           .basket
             a(href="#modal1" class="modal-trigger") კალათა <img src="images/carticon.png"> <span>0</span>
         ul.menubar
-          -var menu = [{title: 'ღვინის მაღაზია', href: 'vineshop.html'},{title: 'საკონფერენციო დარბაზი', href: 'textpage.html'},{title: 'შეთავაზებები', href: ''},{title: 'ღონისძიებები', href: 'events.html'},{title: 'გალერეა', href: ''},{title: 'კონტაქტი', href: ''}];
+          -var menu = [{title: 'ღვინის მაღაზია', href: 'vineshop.html'},{title: 'საკონფერენციო დარბაზი', href: 'about.html'},{title: 'შეთავაზებები', href: ''},{title: 'ღონისძიებები', href: 'events.html'},{title: 'გალერეა', href: 'gallery.html'},{title: 'კონტაქტი', href: 'contact.html'}];
             each menuitem, index in menu
               li(class=(index == 3) ? 'active' : '')
                 a(href=menuitem.href)=menuitem.title
@@ -70,6 +71,7 @@ html
       .wrapper ვინერია &copy; 2017
     
     script(src="js/jquery-3.2.1.min.js")
+    script(src="js/lightbox.min.js")
     script(src="js/materialize.min.js")
     script(src="js/main.js")
     script.
