@@ -3,12 +3,14 @@
   <head>
     <title>Vineria</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/ka.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <div class="modal" id="modal1">
@@ -17,6 +19,26 @@
         <div class="close" onclick="$('#modal1').modal('close')"></div>
         <form>
           <div>
+            <div class="item">
+              <div class="img"><img src="images/bottle.png"></div>
+              <div class="cont">
+                <h2>მწვანე ქისი</h2>
+                <div class="manufacturer">თელავის ღვინის მარანი</div>
+                <input class="dec" type="button" value="-">
+                <input class="count" type="text" data-price="22.5" value="2">
+                <input class="enc" type="button" value="+"><span class="price">45.00 <span class="gel">A</span></span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img"><img src="images/bottle.png"></div>
+              <div class="cont">
+                <h2>მწვანე ქისი</h2>
+                <div class="manufacturer">თელავის ღვინის მარანი</div>
+                <input class="dec" type="button" value="-">
+                <input class="count" type="text" data-price="22.5" value="2">
+                <input class="enc" type="button" value="+"><span class="price">45.00 <span class="gel">A</span></span>
+              </div>
+            </div>
             <div class="item">
               <div class="img"><img src="images/bottle.png"></div>
               <div class="cont">
@@ -76,6 +98,7 @@
     <div class="header">
       <div class="wrapper">
         <div class="top">
+          <div id="burger"><span></span><span></span><span></span></div>
           <div class="langs">ვა:
             <ul>
               <li class="active"><a href="">ქა</a></li>

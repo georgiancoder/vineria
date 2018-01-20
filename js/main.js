@@ -5,18 +5,34 @@ function Vineria(){
     $('.modal').modal();
     this.scroller();
     this.checkout();
+    this.responsiveMenu();
   };
   this.scroller = function(){
     var self = this;
     var options = [
-      {selector: '.gallery', offset: 100, callback: function() {
-        $('.gallery').addClass("animated slideInLeft")
+      {selector: '.images', offset: 100, callback: function() {
+        $('.images').addClass("animated slideInLeft")
       } },
       {selector: '.address', offset: 100, callback: function() {
         $('.address').addClass("animated slideInLeft")
       } }
     ];
     Materialize.scrollFire(options);
+  }
+  this.responsiveMenu = function(){
+    $("#burger").click(function(event){
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      $(this).toggleClass('open');
+      if($(this).hasClass('open')){
+        $("body").addClass('open');
+        $("ul.menubar").addClass('open');
+      }
+      else {
+        $("body").removeClass('open');
+        $("ul.menubar").removeClass('open');
+      }
+    });
   }
   this.checkout = function(){
     $("#modal1 .dec").click(function(event){

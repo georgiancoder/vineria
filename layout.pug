@@ -3,12 +3,14 @@ html
   head
     title Vineria
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="css/fonts.css")
     link(rel="stylesheet" href="css/ka.css")
     link(rel="stylesheet" href="css/lightbox.min.css")
     link(rel="stylesheet" href="css/materialize.min.css")
     link(rel="stylesheet" href="css/animate.css")
     link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/responsive.css")
   body
     #modal1.modal
       .modal-header თქვენი შეკვეთა
@@ -16,7 +18,7 @@ html
         .close(onclick="$('#modal1').modal('close')")
         form
           div
-            -for (var i = 0; i < 3; i++)
+            -for (var i = 0; i < 5; i++)
               div.item
                 .img
                   img(src="images/bottle.png")
@@ -48,6 +50,10 @@ html
     .header
       .wrapper
         .top
+          #burger
+            span
+            span
+            span
           .langs ვა:
             ul
               li.active

@@ -1,0 +1,279 @@
+@media (max-width: 1113px){
+  .wrapper{
+    width: 100%;
+  }
+  body .events .wrapper{
+    padding: 0 15px;
+  }
+  body .scrollContent .images .wrapper .img{
+    width: calc((100% - 60px) / 3);
+  }
+  body .contact .wrapper{
+    padding: 20px 15px;
+  }
+  body .gallery .wrapper{
+    justify-content: space-around;
+    padding: 0 15px;
+  }
+  body .gallery .wrapper .g{
+    margin: 20px!important;
+  }
+  body .galleryinner .wrapper .images{
+    justify-content: space-around;
+  }
+  body .galleryinner .wrapper .images a{
+    margin: 20px!important
+  }
+  body .galleryinner .wrapper{
+    padding: 0 15px;
+  }
+  body .events .wrapper .event .desc{
+    width: calc(100% - 276px);
+  }
+  body .textpage .wrapper .text{
+    width: calc(100% - 430px);
+  }
+  body .vineshop .wrapper .content{
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  body .shopinner .wrapper .text{
+    padding-left: 15px;
+  }
+  body .shopinner .wrapper .text .info > div table{
+    margin-left: 0;
+  }
+  body .shopinner .wrapper .text .info > div form{
+  }
+  body .modal{
+    width: 100%;
+  }
+  body .modal .modal-content form > div{
+    width: 100%!important;
+    border: 0!important;
+    padding: 0!important;
+  }
+  body .modal .modal-content form > div .details{
+    padding: 0;
+  }
+  body .modal .modal-content form > div:last-child{
+    margin-top: 30px;
+  }
+  body .modal .modal-content form > div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .modal .modal-content form > div .sum{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px){
+  body .contact .wrapper form textarea{
+    width: calc(60% - 10px);
+  }
+  body .contact .wrapper form .l{
+    width: calc(40%);
+  }
+  body .textpage .wrapper .text{
+    width: 100%;
+  }
+  body .textpage .wrapper{
+    justify-content: center;
+  }
+  body .textpage .wrapper{
+    padding: 15px;
+  }
+}
+
+@media (max-width: 960px){
+  body .scrollContent .address .wrapper .info, body .contact .wrapper .info{
+    justify-content: space-around;
+  }
+  body .scrollContent .address .wrapper .info li, body .contact .wrapper .info li{
+    margin: 10px 0;
+  }
+  body .scrollContent{
+    margin-top: 0;
+  }
+  #burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  body.open{
+    position: fixed;
+    left: 80vw;
+    overflow: hidden!important;
+  }
+  body > .header ul.menubar{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow: auto;
+    width: 80vw;
+    height: 100vh;
+    display: block;
+    background-color: #3b4b86;
+    z-index: 22;
+  }
+  body > .header ul.menubar.open{
+    left: 0;
+  }
+  body > .header ul.menubar li{
+    height: auto;
+  }
+  body > .header .top .langs{
+    font-size: 20px;
+    margin-left: 10px;
+    position: relative;
+  }
+  body > .header .top .langs:hover ul{
+    display: block;
+  }
+  body > .header .top .langs ul{
+    position: absolute;
+    left: 0;
+    display: none;
+    top: 20px;
+  }
+  body > .header .top .langs ul li{
+    display: block;
+    margin: 10px 0;
+  }
+  body .shopinner .wrapper .text{
+    width: 100%;
+  }
+  body .shopinner .wrapper{
+    justify-content: center;
+  }
+  body .shopinner .wrapper .img{
+    text-align: center;
+  }
+  body .shopinner .wrapper .img::after{
+    left: 50%;
+  }
+  body .shopinner .wrapper .text a.back{
+    position: absolute;
+    top: -30px;
+  }
+  body .shopinner{
+    position: relative;
+  }
+  body .modal .modal-content{
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px){
+  body .events .wrapper .event{
+    justify-content: center;
+  }
+  body .events .wrapper .event .desc{
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 10px;
+  }
+  body .scrollContent .koncefcia .wrapper{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  body .scrollContent .koncefcia .wrapper .desc{
+    margin: 0;
+    margin-top: 30px;
+  }
+  body .scrollContent .koncefcia .wrapper{
+    padding: 0 10px;
+  }
+  body > .header .top .basket a{
+    font-size: 0;
+  }
+  body > .header .top .basket a span{
+    font-size: 20px;
+  }
+  body .scrollContent .images .wrapper{
+    padding: 0 20px;
+  }
+  body .scrollContent .images .wrapper .img{
+    width: calc((100% - 40px) / 2);
+    margin-right: 40px;
+  }
+  body .scrollContent .images .wrapper .img:nth-child(3n + 3){
+    margin-right: 40px;
+  }
+  body .scrollContent .images .wrapper .img:nth-child(2n + 2){
+    margin-right: 0;
+  }
+  body .contact .wrapper form textarea{
+    width: 100%;
+    margin-top: 15px;
+  }
+  body .contact .wrapper form .l{
+    width: 100%;
+  }
+  body .textpageinner .wrapper .text img{
+    width: 100%;
+    height: auto;
+  }
+  body .textpageinner .wrapper{
+    padding: 0 15px;
+  }
+  body .shopinner .wrapper .text .info > div{
+    width: 100%;
+  }
+  body .shopinner .wrapper .text .info > div:first-child{
+    border: 0;
+  }
+  body .shopinner .wrapper .text .info > div table{
+    margin-left: 0;
+  }
+  body .shopinner .wrapper .text{
+    padding: 0 15px;
+  }
+  body .modal .modal-content form > div .details .pay{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  body .modal .modal-content form > div .details .pay >div{
+    text-align: center;
+  }
+  body .modal .modal-content form > div .details .pay input[type=text]{
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px){
+  body .scrollContent .images .wrapper .img{
+    width: 100%;
+    margin-right: 0!important;
+  }
+  body .contact .wrapper form .b input[type='reset'], body .contact .wrapper form .b input[type='submit']{
+    padding: 0 30px;
+    margin: 10px 0;
+  }
+  body .textpage .wrapper .text{
+    padding: 10px 5px;
+  }
+  body .textpage .wrapper .img{
+    width: 100%;
+  }
+  body .shopinner .wrapper .text .info > div{
+    overflow: auto;
+  }
+  body .shopinner .wrapper .text .info > div table{
+    width: 400px;
+  }
+  body .shopinner .wrapper .text .about{
+    margin-top: 30px;
+  }
+  body .shopinner .wrapper .img::after{
+    width: 100vw;
+  }
+}
