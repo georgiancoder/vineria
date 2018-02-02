@@ -12,6 +12,7 @@
     padding: 20px 15px;
   }
   body .gallery .wrapper{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 0 15px;
   }
@@ -19,6 +20,7 @@
     margin: 20px!important;
   }
   body .galleryinner .wrapper .images{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .galleryinner .wrapper .images a{
@@ -34,6 +36,7 @@
     width: calc(100% - 430px);
   }
   body .vineshop .wrapper .content{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 30px;
     padding: 0 15px;
@@ -61,8 +64,12 @@
     margin-top: 30px;
   }
   body .modal .modal-content form > div:first-child{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .modal .modal-content form > div .sum{
@@ -82,6 +89,8 @@
     width: 100%;
   }
   body .textpage .wrapper{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body .textpage .wrapper{
@@ -91,6 +100,7 @@
 
 @media (max-width: 960px){
   body .scrollContent .address .wrapper .info, body .contact .wrapper .info{
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .scrollContent .address .wrapper .info li, body .contact .wrapper .info li{
@@ -100,8 +110,15 @@
     margin-top: 0;
   }
   #burger{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: absolute;
     top: 20px;
@@ -151,6 +168,8 @@
     width: 100%;
   }
   body .shopinner .wrapper{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body .shopinner .wrapper .img{
@@ -173,6 +192,8 @@
 
 @media (max-width: 768px){
   body .events .wrapper .event{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body .events .wrapper .event .desc{
@@ -181,7 +202,10 @@
     padding: 15px 10px;
   }
   body .scrollContent .koncefcia .wrapper{
+    -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   body .scrollContent .koncefcia .wrapper .desc{
@@ -237,7 +261,9 @@
     padding: 0 15px;
   }
   body .modal .modal-content form > div .details .pay{
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   body .modal .modal-content form > div .details .pay >div{
